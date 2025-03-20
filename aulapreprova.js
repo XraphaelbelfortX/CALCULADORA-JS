@@ -17,13 +17,14 @@ function calculateResult() {
 
 function backspace() {
     let display = document.getElementById('display');
-    display.value = display.value.slice(0, -1); // Corrigido
+    display.value = display.value.slice(0, -1); 
 }
 document.addEventListener("keydown", function(event) {
     let key = event.key;
     if (!isNaN(key) || "+-*/.".includes(key)) {
         appendToDisplay(key);
-    } else if (key === "Enter") {
+    } else if (key === "Enter" || key === '=') {
+        event.preventDefault();
         calculateResult();
     } else if (key === "Backspace") {
         backspace();
