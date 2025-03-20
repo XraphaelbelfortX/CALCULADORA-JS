@@ -3,42 +3,58 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f4;
+    background-color: white;
 }
 .calculator {
-    background: rgb(63, 58, 58);
+    background: rgb(31, 30, 30);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     text-align: center;
-    border: 5px solid rgb(255, 85, 0);
+    border: 5px solid rgb(100, 90, 85);
+    width: 250px;
+    border-radius: 2rem;
 }
 input {
-    width: 100%;
+    width: 93%;
     height: 50px;
     font-size: 1.5rem;
     text-align: right;
     margin-bottom: 10px;
     color: white;
+    
 }
 .buttons {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 10px;
     
+    
 }
 button{
     padding: 15px;
     font-size: 1.2rem;
-    background-color: rgb(34, 30, 30);
+    background-color: rgb(63, 58, 58);
     color: white;
     cursor:pointer;
-    border-radius: 80px;
-    border-color: white;
+    border-radius: 500px;
+    border: black;
 }
 img {
-    width: 20px;
+    width: 18px;
     color-scheme: white;
-    border-radius: 12px;
-    filter: invert(120%) brightness(100%);
+    display: flex;
+    margin-left: 2.5px;
+    filter: invert(200%) brightness(200%);
+}
+
+#orange {
+    background: rgb(245, 173, 39);
+}
+#gray {
+    background: rgb(122, 120, 120);
+}
+#display {
+    background-color: rgb(31, 30, 30); 
+    border: 1px solid rgb(31, 30, 30);
 }
